@@ -28,18 +28,20 @@ a:visited {
     }
 
 a:hover {
-    color: red;
+    color: purple;
     }
+
+
 
 .grid{
     background:white;
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px , 1fr));
     grid-auto-rows: minmax(100px,auto); 
     gap:1.5em;
     justify-items: stretch;     /* start,center,end x axis  */
     align-items:stretch;    /* start,center,end y axis strech=default  */
-    margin-left: 2%;
+    margin-left:6%;
     font-size: 1.2em;
     margin-bottom:120px;  /* because of footer   */
 
@@ -58,7 +60,7 @@ a:hover {
 
 .title{
 text-decoration-line: underline;
-text-align: center;
+text-align: start;
 }
 
 .image{
@@ -67,7 +69,7 @@ text-align: center;
 }
 
 .image:hover{
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .headContainer{
@@ -88,6 +90,10 @@ text-align: center;
 .link{
     font-size:1.5em;
     margin-right: 10px;
+    color: aqua;
+    border: 1em;
+    border-color: black;
+    text-decoration-line: none;
     
 
 }
@@ -129,6 +135,7 @@ text-align: center;
     padding-left: 10px;
    
 }
+
 
 
 @media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
