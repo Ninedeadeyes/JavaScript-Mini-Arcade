@@ -148,6 +148,11 @@ text-align: center;
         height:120px;
     }
 
+    .introduction{
+        font-size:.8em; 
+
+    }
+
     .mainHead{
         font-size:1.0em;
     }
