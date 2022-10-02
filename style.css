@@ -21,7 +21,13 @@ iframe{
 a:link {
     color: blue;
     font-family: 'Maven Pro', sans-serif;  
+   
     }
+
+
+.animate__repeat-3{
+    --animate-repeat: 4;
+}
 
 a:visited {
     color: blue;
@@ -41,7 +47,7 @@ a:hover {
     gap:1.5em;
     justify-items: stretch;     /* start,center,end x axis  */
     align-items:stretch;    /* start,center,end y axis strech=default  */
-    margin-left:6%;
+    margin-left:4%;
     font-size: 1.2em;
     margin-bottom:120px;  /* because of footer   */
 
@@ -106,10 +112,19 @@ text-align: start;
     font-size:1.7em;
 }
 
+
+
+
+move{
+    position: relative;
+    left:1000px;
+
+}
+
 .footer{
     display:flex;
     position : fixed;   /*stays in the same place even if the page is scrolled */
-    background-color:rgb(154, 194, 204);  /* rgb(156, 220, 223); */
+    background-color:rgb(154, 208, 221);  /* rgb(156, 220, 223); */
     justify-content: flex-start;   /*set the alignment of primary axis (x) */ 
     height: 100px;
     align-items:flex-start;    /*set the alignment of secondary axis (y) */ 
