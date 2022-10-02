@@ -81,7 +81,7 @@ text-align: start;
 .headContainer{
     display:flex;
     position : fixed;   /*stays in the same place even if the page is scrolled */
-    background-color:rgb(195, 228, 236);/* rgb(173, 228, 223); */
+    background-image: linear-gradient(to right, rgb(155, 208, 221), white , rgb(155, 208, 221));
     height: 80px;
     align-items:center;    /*set the alignment of secondary axis (y) */ 
     Z-index: 2;              /* everything hides behinder the header   */
@@ -124,7 +124,7 @@ move{
 .footer{
     display:flex;
     position : fixed;   /*stays in the same place even if the page is scrolled */
-    background-color:rgb(154, 208, 221);  /* rgb(156, 220, 223); */
+    background-image: linear-gradient(to right, rgb(155, 208, 221), white , rgb(155, 208, 221));
     justify-content: flex-start;   /*set the alignment of primary axis (x) */ 
     height: 100px;
     align-items:flex-start;    /*set the alignment of secondary axis (y) */ 
@@ -150,8 +150,6 @@ move{
     padding-left: 10px;
    
 }
-
-
 
 @media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
     
