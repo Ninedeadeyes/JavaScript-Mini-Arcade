@@ -18,12 +18,12 @@ iframe{
 
 a:link {
     font-family: 'Maven Pro', sans-serif; 
+   
 }
 
 a:hover {
     color: blue;
     font-size: 1.2em;
-    text-align: center;
     }
 
 .headContainer{
@@ -50,7 +50,6 @@ a:hover {
     text-emphasis-color: white;  
 }
 
-
 .link{
     font-size:1.2em;
     margin-right: 10px;
@@ -67,7 +66,6 @@ a:hover {
     font-family: 'Maven Pro', sans-serif;  
 }
 
-
 .grid{
     background:white;
     display:grid;
@@ -79,9 +77,9 @@ a:hover {
     margin-left:4%;
     font-size: 1.2em;
     margin-bottom:120px;  /* because of footer   */
+ 
 
 }
-
 
 .image{
     border-radius:5px;
