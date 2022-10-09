@@ -116,8 +116,8 @@ a:hover {
    
 }
 
-@-ms-viewport{
-  width: device-width;
+@viewport {
+  width: 100vw; /*Sets the width of the actual viewport to the device width*/
 }
 
 @media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
