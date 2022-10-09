@@ -37,7 +37,7 @@ a:hover {
     left:0;
     right:0;
     justify-content: space-between;
-    min-width:230px;       /*min-width so that we don't squash the title if minimise any smaller */
+    /*min-width:230px;        min-width so that we don't squash the title if minimise any smaller */
     border-radius:5px;               
 }
 
