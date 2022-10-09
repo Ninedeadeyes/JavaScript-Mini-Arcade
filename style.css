@@ -119,7 +119,7 @@ a:hover {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
 }
 
-@media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
+@media(max-width:550px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
         width: 480px;
