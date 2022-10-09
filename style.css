@@ -116,6 +116,10 @@ a:hover {
    
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 @media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
