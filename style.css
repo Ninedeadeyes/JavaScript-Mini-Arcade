@@ -37,6 +37,7 @@ a:hover {
     left:0;
     right:0;
     justify-content: space-between;
+    width:100%;
     border-radius:5px;               
 }
 
@@ -97,6 +98,7 @@ a:hover {
     bottom:0px;                /* so it is fixed to the sides of the page  */
     left:0;
     right:0;
+    width:100%;
     border-radius:5px;
 }
 
