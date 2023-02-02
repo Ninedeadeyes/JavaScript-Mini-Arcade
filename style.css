@@ -131,6 +131,11 @@ a:hover {
    
 }
 
+#black{
+    color: black;
+}
+
+
 @viewport {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
 }
