@@ -50,6 +50,14 @@ a:hover {
     text-emphasis-color: white;  
 }
 
+.main-nav{
+    display:flex;
+    list-style:none;
+    font-size:1em;
+    width:130px;
+    margin:5px;
+}
+
 .link{
     font-size:1.2em;
     margin-right: 10px;
