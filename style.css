@@ -32,6 +32,16 @@ a:hover {
     font-size: 1.2em;
     }
 
+.design:link{
+    text-decoration:none;
+}
+
+.design:hover{
+    font-size: 1.0em;
+
+}
+
+
 .headContainer{
     display:flex;
     position : fixed;   /*stays in the same place even if the page is scrolled */
