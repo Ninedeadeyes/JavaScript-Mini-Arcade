@@ -180,6 +180,11 @@ a:hover {
         font-size:1.0em;
     }
 
+    li{
+
+        font-size:1.0em;
+    }
+
 
     .aboutMe{
 
@@ -193,6 +198,21 @@ a:hover {
 }
 
 
+@media(max-width:460px){      /*Reponsive design for smaller tablet and large smartphones   */
+    
+    img{
+        width: 380px;
+        height: 300px;
+    }
+
+    .footer{
+
+        height: 80px;
+        border-radius:3px;
+    }
+
+}    
+
 @media(max-width:360px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
@@ -205,8 +225,31 @@ a:hover {
     }
 
 
+    li{
+
+        font-size:.5em;
+    }
+    
+
     .aboutMeInfo{
 
         font-size:.5em; 
     }
+
+    .aboutMe{
+
+        font-size:.7em; 
+    }
+
+
+    .footer{
+
+        height: 50px;
+
+        border-radius:2px;
+    }
+    
+
+
+
 }
