@@ -196,8 +196,17 @@ a:hover {
 @media(max-width:360px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
-        width: 280px;
-        height: 200px;
+        width: 320px;
+        height: 250px;
     }
 
+    .link{
+        font-size:.7em;
+    }
+
+
+    .aboutMeInfo{
+
+        font-size:.5em; 
+    }
 }
