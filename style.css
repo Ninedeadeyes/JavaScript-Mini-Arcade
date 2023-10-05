@@ -207,7 +207,7 @@ a:hover {
 
     .footer{
 
-        height: 80px;
+        height: 70px;
         border-radius:3px;
     }
 
@@ -221,7 +221,7 @@ a:hover {
     }
 
     .link{
-        font-size:.7em;
+        font-size:.5em;
     }
 
 
@@ -229,7 +229,7 @@ a:hover {
 
         font-size:.5em;
     }
-    
+
 
     .aboutMeInfo{
 
@@ -244,12 +244,9 @@ a:hover {
 
     .footer{
 
-        height: 50px;
+        height: 30px;
 
         border-radius:2px;
     }
-    
-
-
 
 }
