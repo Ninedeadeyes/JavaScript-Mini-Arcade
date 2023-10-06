@@ -68,7 +68,7 @@ a:hover {
 
 
 .link{
-    font-size:1.0em;
+    font-size:1.2em;
     margin-right: 10px;
     color:rgb(93, 55, 121);  /*Don't know why but in Avast Secure Browser it becomes blue */
 }
@@ -152,6 +152,12 @@ a:hover {
     margin-left:5px;
 }
 
+#edit{
+
+    font-size: 1em;
+
+}
+
 
 @viewport {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
@@ -174,6 +180,11 @@ a:hover {
         width: 480px;
         height: 400px;
     }
+
+    .link{
+        font-size:.8em;
+    }
+
     
     .footer{
 
@@ -189,9 +200,6 @@ a:hover {
         font-size:.8em;
     }
 
-    .link{
-        font-size:.8em;
-    }
 
     .aboutMe{
 
@@ -214,11 +222,11 @@ a:hover {
 
 @media(max-width:480px){      /*Reponsive design for smaller tablet and large smartphones   */
 
-    .link{
-        font-size:.5em;
+    #edit{
+
+        font-size: .7em;
+    
     }
-
-
     #positioning{
         
      margin-left:120px;
@@ -246,6 +254,13 @@ a:hover {
     img{
         width: 280px;
         height: 200px;
+    }
+
+
+    #edit{
+
+        font-size: .5em;
+    
     }
 
 }
