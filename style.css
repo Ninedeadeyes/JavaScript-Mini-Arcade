@@ -4,9 +4,9 @@
     font-family:Bungee;
 }
 
-li{
+p {
+    font-family:serif;
 
-    color: black;
 }
 
 body{
@@ -22,26 +22,16 @@ iframe{
 }
 
 a:link {
-    font-family: 'Maven Pro', sans-serif; 
-    color:rgb(93, 55, 121);  /*Don't know why but in Avast Secure Browser it becomes blue */
+    font-family: 'Maven Pro', sans-serif;  
    
 }
 
 a:hover {
-    color: blue;
     font-size: 1.2em;
+    color: red;
     }
 
-.design:link{
-    text-decoration:none;
-}
-
-.design:hover{
-    font-size: 1.0em;
-
-}
-
-
+    
 .headContainer{
     display:flex;
     position : fixed;   /*stays in the same place even if the page is scrolled */
@@ -54,7 +44,7 @@ a:hover {
     right:0;
     justify-content: space-between;
     width:100%;
-    border-radius:5px;               
+    border-radius:5px;            
 }
 
 .mainHead{
@@ -64,6 +54,7 @@ a:hover {
     font-family: Bungee;
     font-size:1.7em;
     text-emphasis-color: white;  
+    margin-left:10px;
 }
 
 .main-nav{
@@ -74,9 +65,12 @@ a:hover {
     margin:5px;
 }
 
+
+
 .link{
     font-size:1.2em;
     margin-right: 10px;
+    color:rgb(93, 55, 121);  /*Don't know why but in Avast Secure Browser it becomes blue */
 }
 
 .introduction{
@@ -88,6 +82,7 @@ a:hover {
     text-align: center;
     padding: 1em;
     font-family: 'Maven Pro', sans-serif;  
+    
 }
 
 .grid{
@@ -138,11 +133,21 @@ a:hover {
     margin-top: 5px;
     color: black;
     padding-left: 10px;
+    font-family: 'Maven Pro', sans-serif; 
    
 }
 
+
 #black{
     color: black;
+}
+
+#brown {
+    color: brown;
+}
+
+#positioning{
+    margin-left:5px;
 }
 
 
@@ -150,14 +155,20 @@ a:hover {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
 }
 
-@media(max-width:550px){      /*Reponsive design for smaller tablet and large smartphones   */
+
+@media(max-width:1000px){      /*Reponsive design for smaller tablet and large smartphones   */
+    
+
+    #positioning{
+        
+        margin-left:120px;
+        }
+
+}
+
+@media(max-width:650px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
-        width: 480px;
-        height: 400px;
-    }
-
-    iframe{
         width: 480px;
         height: 400px;
     }
@@ -169,22 +180,16 @@ a:hover {
 
     .introduction{
         font-size:.6em; 
-
+    
     }
 
     .mainHead{
-        font-size:1.0em;
+        font-size:.8em;
     }
 
     .link{
-        font-size:1.0em;
+        font-size:.8em;
     }
-
-    li{
-
-        font-size:1.0em;
-    }
-
 
     .aboutMe{
 
@@ -195,69 +200,58 @@ a:hover {
 
         font-size:.8em; 
     }
+
+    #positioning{
+        
+        margin-left:160px;
+        }
+
+
 }
 
 
-@media(max-width:460px){      /*Reponsive design for smaller tablet and large smartphones   */
+@media(max-width:480px){      /*Reponsive design for smaller tablet and large smartphones   */
     
+    #positioning{
+        
+     margin-left:120px;
+    }
+
     img{
         width: 380px;
         height: 300px;
     }
 
-    .footer{
+}
 
-        height: 100px;
-        border-radius:3px;
-    }
-
-    .aboutMeInfo{
-
-        font-size:.7em; 
-    }
-
-    .aboutMe{
-
-        font-size:.7em; 
-    }
-
-
-}    
 
 @media(max-width:360px){      /*Reponsive design for smaller tablet and large smartphones   */
     
+    .introduction{
+
+        margin-left:20px; /*move to the left when screen is very small   */
+    }
+    
+     .mainHead{
+        font-size:.8em;
+    }
+
     img{
-        width: 320px;
-        height: 250px;
-    }
-
-    .link{
-        font-size:.5em;
-    }
-
-
-    li{
-
-        font-size:.5em;
-    }
-
-
-    .aboutMeInfo{
-
-        font-size:.5em; 
-    }
-
-    .aboutMe{
-
-        font-size:.5em; 
-    }
-
-
-    .footer{
-
-        height: 60px;
-
-        border-radius:2px;
+        width: 280px;
+        height: 200px;
     }
 
 }
+
+@media(max-width:320px){      /*Reponsive design for smaller tablet and large smartphones   */
+    
+    .introduction{
+
+        margin-left:40px; /*move to the left when screen is very small   */
+    }
+    
+}
+
+
+
+
