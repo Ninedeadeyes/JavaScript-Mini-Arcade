@@ -68,7 +68,7 @@ a:hover {
 
 
 .link{
-    font-size:1.2em;
+    font-size:1.0em;
     margin-right: 10px;
     color:rgb(93, 55, 121);  /*Don't know why but in Avast Secure Browser it becomes blue */
 }
@@ -213,7 +213,12 @@ a:hover {
 
 
 @media(max-width:480px){      /*Reponsive design for smaller tablet and large smartphones   */
-    
+
+    .link{
+        font-size:.5em;
+    }
+
+
     #positioning{
         
      margin-left:120px;
