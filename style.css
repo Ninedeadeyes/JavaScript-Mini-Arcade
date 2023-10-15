@@ -233,7 +233,7 @@ a:hover {
 
     .aboutMeInfo{
 
-        font-size:.6em; 
+        font-size:.7em; 
     }
 
 }
@@ -260,6 +260,11 @@ a:hover {
 
         font-size: .7em;
     
+    }
+
+    .aboutMe{
+
+        font-size:.7em; 
     }
 
     .aboutMeInfo{
