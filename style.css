@@ -152,12 +152,6 @@ a:hover {
     margin-left:0px;
 }
 
-#edit{
-
-    font-size: 1em;
-
-}
-
 
 @viewport {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
@@ -192,7 +186,7 @@ a:hover {
     }
 
     .introduction{
-        font-size:.6em; 
+        font-size:1.0em; 
     
     }
 
@@ -222,9 +216,9 @@ a:hover {
 
 @media(max-width:480px){      /*Reponsive design for smaller tablet and large smartphones   */
 
-    #edit{
+    .grid{
 
-        font-size: .7em;
+        font-size: .8em;
     
     }
     #positioning{
@@ -257,9 +251,9 @@ a:hover {
     }
 
 
-    #edit{
+    .grid{
 
-        font-size: .5em;
+        font-size: .7em;
     
     }
 
