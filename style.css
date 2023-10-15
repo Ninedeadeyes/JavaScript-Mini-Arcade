@@ -231,13 +231,18 @@ a:hover {
         height: 300px;
     }
 
+    .aboutMeInfo{
+
+        font-size:.6em; 
+    }
+
 }
 
 
 @media(max-width:360px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     .introduction{
-
+        font-size:0.8em; 
         margin-left:20px; /*move to the left when screen is very small   */
     }
     
@@ -256,6 +261,12 @@ a:hover {
         font-size: .7em;
     
     }
+
+    .aboutMeInfo{
+
+        font-size:.5em; 
+    }
+
 
 }
 
