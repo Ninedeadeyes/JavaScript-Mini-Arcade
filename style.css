@@ -52,7 +52,7 @@ a:hover {
     color: black;
     text-decoration-line: underline;
     font-family: Bungee;
-    font-size:1.7em;
+    font-size:1.4em;
     text-emphasis-color: white;  
     margin-left:10px;
 }
@@ -229,6 +229,11 @@ a:hover {
         font-size: 1.0em;
     }
 
+    .main-nav{
+        font-size: .8em;
+
+       }
+
 }
 
 
@@ -239,9 +244,7 @@ a:hover {
         margin-left:20px; /*move to the left when screen is very small   */
     }
     
-     .mainHead{
-        font-size:.8em;
-    }
+
 
     .grid{
 
@@ -262,6 +265,10 @@ a:hover {
         margin-left:40px; /*move to the left when screen is very small   */
     }
     
+    .grid{
+
+        font-size: .6em;
+    }
 
     .grid{
 
