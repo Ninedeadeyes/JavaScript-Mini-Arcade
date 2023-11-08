@@ -241,7 +241,9 @@ a:hover {
     
     .introduction{
 
-        margin-left:20px; /*move to the left when screen is very small   */
+        margin-left:5px;
+        text-align: left
+        
     }
     
 
@@ -256,15 +258,12 @@ a:hover {
         height: 200px;
     }
 
+
 }
 
 @media(max-width:320px){      /*Reponsive design for smaller tablet and large smartphones   */
     
-    .introduction{
 
-        margin-left:40px; /*move to the left when screen is very small   */
-    }
-    
     .grid{
 
         font-size: .6em;
