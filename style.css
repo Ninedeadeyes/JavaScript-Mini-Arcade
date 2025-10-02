@@ -52,9 +52,10 @@ a:hover {
     color: black;
     text-decoration-line: underline;
     font-family: Bungee;
-    font-size:1.4em;
     text-emphasis-color: white;  
-    margin-left:10px;
+    font-size: 5vw; /* scales with screen width */
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 .main-nav{
@@ -274,6 +275,7 @@ a:hover {
         font-size: .6em;
     }
 }
+
 
 
 
