@@ -33,36 +33,40 @@ a:hover {
 
     
 .headContainer{
-    display:flex;
-    position : fixed;   /*stays in the same place even if the page is scrolled */
-    background-image: linear-gradient(to right, rgb(246, 218, 218), white , rgb(246, 218, 218));
-    height: 80px;
-    align-items:center;    /*set the alignment of secondary axis (y) */ 
-    Z-index: 2;              /* everything hides behinder the header   */
-    top:0px;                /* so it is fixed to the sides of the page  */
-    left:0;
-    right:0;
-    justify-content: space-between;
-    width:100%;
-    border-radius:5px;            
-}
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1em;
+  background-image: linear-gradient(to right, rgb(246, 218, 218), white , rgb(246, 218, 218));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 2;
+  width: 100%;
+  border-radius: 5px;
+}        
+
 
 .mainHead{
-    text-align: center;
-    color: black;
-    text-decoration-line: underline;
-    font-family: Bungee;
-    font-size:1.4em;
-    text-emphasis-color: white;  
-    margin-left:10px;
+  flex: 1;
+  text-align: center;
+  font-family: Bungee;
+  font-size: 1.4em;
+  text-decoration: underline;
+  color: black;
 }
 
 .main-nav{
-    display:flex;
-    list-style:none;
-    font-size:1em;
-    width:130px;
-    margin:5px;
+
+  display: flex;
+  gap: 0.5em;
+  padding-right: 1em; /* adds breathing room */
+  flex-wrap: wrap;
+  width: auto; /* let it size naturally */
 }
 
 
@@ -212,8 +216,19 @@ a:hover {
 }
 
 
-@media(max-width:480px){      /*Reponsive design for smaller tablet and large smartphones   */
-    
+
+
+@media (max-width: 480px) {
+  .mainHead {
+    font-size: 1em;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: .8em;
+  }
+
     #positioning{
         
      margin-left:120px;
@@ -229,10 +244,6 @@ a:hover {
         font-size: 1.0em;
     }
 
-    .main-nav{
-        font-size: .8em;
-
-       }
 
 }
 
