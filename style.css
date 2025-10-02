@@ -52,21 +52,24 @@ a:hover {
 
 
 .mainHead{
-  flex: 1;
+  flex: 1 1 auto;
   text-align: center;
+  font-size: clamp(1em, 4vw, 1.4em); /* scales with screen width */
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  margin: 0 auto;
   font-family: Bungee;
-  font-size: 1.4em;
   text-decoration: underline;
   color: black;
 }
 
 .main-nav{
-
   display: flex;
   gap: 0.5em;
-  padding-right: 1em; /* adds breathing room */
-  flex-wrap: wrap;
-  width: auto; /* let it size naturally */
+  flex-shrink: 0;
+  padding-right: 1em;
+  margin-left: auto; /* pushes it to the far right */
 }
 
 
@@ -172,7 +175,17 @@ a:hover {
 }
 
 @media(max-width:650px){      /*Reponsive design for smaller tablet and large smartphones   */
+   
     
+  .mainHead {
+    font-size: 1em;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: .8em;
+  }
     img{
         width: 480px;
         height: 400px;
@@ -220,13 +233,9 @@ a:hover {
 
 @media (max-width: 480px) {
   .mainHead {
-    font-size: 1em;
-  }
-
-  .main-nav {
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: .8em;
+    text-align: left;
+    margin-left: 1em;
+    margin-right: auto;
   }
 
     #positioning{
@@ -250,6 +259,12 @@ a:hover {
 
 @media(max-width:360px){      /*Reponsive design for smaller tablet and large smartphones   */
     
+  .mainHead {
+    text-align: left;
+    margin-left: 1em;
+    margin-right: auto;
+  }
+
     .introduction{
 
         margin-left:5px;
@@ -273,6 +288,7 @@ a:hover {
 }
 
 @media(max-width:320px){      /*Reponsive design for smaller tablet and large smartphones   */
+    
     
 
     .grid{
