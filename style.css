@@ -236,6 +236,7 @@ a:hover {
     text-align: left;
     margin-left: 1em;
     margin-right: auto;
+    font-size: clamp(0.8em, 6vw, 1.2em); /* still fluid */
   }
 
     #positioning{
