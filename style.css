@@ -55,6 +55,9 @@ a:hover {
     font-size:1.4em;
     text-emphasis-color: white;  
     margin-left:10px;
+    text-align: center;
+    font-size: 5vw; /* scales with screen width */
+    max-width: 90%;
 }
 
 .main-nav{
@@ -274,6 +277,7 @@ a:hover {
         font-size: .6em;
     }
 }
+
 
 
 
