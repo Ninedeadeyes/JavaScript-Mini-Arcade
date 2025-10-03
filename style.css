@@ -40,7 +40,7 @@ a:hover {
   flex-wrap: nowrap; /* prevents nav from dropping below title */
   padding: 0 1em;
   background-image: linear-gradient(to right, rgb(246, 218, 218), white , rgb(246, 218, 218));
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -83,7 +83,7 @@ a:hover {
 }
 
 .link{
-    font-size:1.2em;
+    font-size: clamp(0.8em, 3vw, 1.2em);
     margin-right: 10px;
     color:rgb(93, 55, 121);  /*Don't know why but in Avast Secure Browser it becomes blue */
 }
