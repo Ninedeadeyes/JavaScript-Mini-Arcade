@@ -1,5 +1,4 @@
 
-
 @font-face{        /* Has to be in the same folder as css code to work  */ 
     src: url(fonts/BungeeInline-Regular.ttf);
     font-family:Bungee;
@@ -34,39 +33,54 @@ a:hover {
 
     
 .headContainer{
-    display:flex;
-    position : fixed;   /*stays in the same place even if the page is scrolled */
-    background-image: linear-gradient(to right, rgb(246, 218, 218), white , rgb(246, 218, 218));
-    height: 80px;
-    align-items:center;    /*set the alignment of secondary axis (y) */ 
-    Z-index: 2;              /* everything hides behinder the header   */
-    top:0px;                /* so it is fixed to the sides of the page  */
-    left:0;
-    right:0;
-    justify-content: space-between;
-    width:100%;
-    border-radius:5px;            
-}
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* prevents nav from dropping below title */
+  padding: 0 1em;
+  background-image: linear-gradient(to right, rgb(246, 218, 218), white , rgb(246, 218, 218));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 2;
+  width: 100%;
+  border-radius: 5px;
+}        
+
 
 .mainHead{
-    text-align: center;
-    color: black;
-    text-decoration-line: underline;
-    font-family: Bungee;
-    font-size:1.7em;
-    text-emphasis-color: white;  
-    margin-left:10px;
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: clamp(1em, 4vw, 1.4em); /* scales with screen width */
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  margin: 0 auto;
+  font-family: Bungee;
+  text-decoration: underline;
+  color: black;
 }
 
 .main-nav{
-    display:flex;
-    list-style:none;
-    font-size:1em;
-    width:130px;
-    margin:5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+  flex-shrink: 0;
+  padding-right: 1em;
+  margin-left: auto; /* pushes it to the far right */
 }
 
 
+
+.link a {
+  display: inline-block;
+  min-width: 80px; /* or use max-content if you want natural width */
+  text-align: center;
+}
 
 .link{
     font-size:1.2em;
@@ -153,6 +167,8 @@ a:hover {
 }
 
 
+
+
 @viewport {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
 }
@@ -169,7 +185,17 @@ a:hover {
 }
 
 @media(max-width:650px){      /*Reponsive design for smaller tablet and large smartphones   */
+   
     
+  .mainHead {
+    font-size: 1em;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: .8em;
+  }
     img{
         width: 480px;
         height: 400px;
@@ -213,8 +239,17 @@ a:hover {
 }
 
 
-@media(max-width:480px){      /*Reponsive design for smaller tablet and large smartphones   */
-    
+
+
+@media (max-width: 480px) {
+  .mainHead {
+    font-size: .7em;
+    text-align: left;
+    margin-left: 1em;
+    margin-right: auto;
+
+  }
+
     #positioning{
         
      margin-left:120px;
@@ -225,18 +260,36 @@ a:hover {
         height: 300px;
     }
 
+    .grid{
+
+        font-size: .6em;
+    }
+
+
 }
 
 
 @media(max-width:360px){      /*Reponsive design for smaller tablet and large smartphones   */
     
+  .mainHead {
+    font-size: .6em;
+    text-align: left;
+    margin-left: 1em;
+    margin-right: auto;
+  }
+
     .introduction{
 
-        margin-left:20px; /*move to the left when screen is very small   */
+        margin-left:5px;
+        text-align: left
+        
     }
     
-     .mainHead{
-        font-size:.8em;
+
+
+    .grid{
+
+        font-size: .6em;
     }
 
     img{
@@ -244,16 +297,5 @@ a:hover {
         height: 200px;
     }
 
+
 }
-
-@media(max-width:320px){      /*Reponsive design for smaller tablet and large smartphones   */
-    
-    .introduction{
-
-        margin-left:40px; /*move to the left when screen is very small   */
-    }
-    
-}
-
-
-
