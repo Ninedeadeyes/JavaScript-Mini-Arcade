@@ -166,6 +166,13 @@ a:hover {
     margin-left:0px;
 }
 
+.link a {
+  display: inline-block;
+  min-width: 80px;
+  max-width: 100px;
+  text-align: center;
+  word-wrap: break-word;
+}
 
 
 
@@ -186,16 +193,26 @@ a:hover {
 
 @media(max-width:650px){      /*Reponsive design for smaller tablet and large smartphones   */
    
+  .headContainer {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
     
   .mainHead {
     font-size: 1em;
   }
 
   .main-nav {
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: .8em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5em 0;
   }
+
+
     img{
         width: 480px;
         height: 400px;
@@ -217,7 +234,8 @@ a:hover {
     }
 
     .link{
-        font-size:.8em;
+    font-size: clamp(0.8em, 3vw, 1em);
+    margin: 0.5em;
     }
 
     .aboutMe{
@@ -271,6 +289,13 @@ a:hover {
 
 @media(max-width:360px){      /*Reponsive design for smaller tablet and large smartphones   */
     
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
   .mainHead {
     font-size: .6em;
     text-align: left;
@@ -284,7 +309,6 @@ a:hover {
         text-align: left
         
     }
-    
 
 
     .grid{
